@@ -11,7 +11,7 @@ python -m venv venv
 ```
 
 ### Windows
-```bash
+```cmd
 venv\Scripts\activate
 pip install -r requirements.txt
 python main.py
@@ -23,3 +23,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 python main.py
 ```
+
+Don't forget to change VIDEO_CAPTURE_SOURCE
+variable to your camera source index (0 by default)

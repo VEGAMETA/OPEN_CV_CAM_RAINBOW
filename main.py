@@ -2,9 +2,11 @@ import cv2
 
 import asyncio
 
+VIDEO_CAPTURE_SOURCE = 0
+
 
 async def main():
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(VIDEO_CAPTURE_SOURCE)
     hue = cap.get(cv2.CAP_PROP_HUE)
     print("Start hue is ", hue)
     while True:
